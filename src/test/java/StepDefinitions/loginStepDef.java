@@ -16,6 +16,7 @@ import cucumber.api.java.en.When;
 import junit.framework.Assert;
 import managers.PageObjectManager;
 import managers.WebDriverManager;
+import util.CONSTANTS;
 
 public class loginStepDef {
 	
@@ -45,7 +46,7 @@ public class loginStepDef {
 	@And("^user selects the action from drop down and submit$")
 	public void user_selects_the_action_from_drop_down_and_submit() throws InterruptedException {
 		loginPage.userAction();
-		Thread.sleep(2000);
+		Thread.sleep(CONSTANTS.STEP_DELAY);
 	   
 	}
 
@@ -91,22 +92,22 @@ public class loginStepDef {
 		loginPage.registertoBuyPuppy.click();
 		 String registerUrl = driver.getCurrentUrl();
 		// Assert.assertEquals("https://www.puppyfind.com/register/?back=", registerUrl);
-		Thread.sleep(2000);
+		Thread.sleep(CONSTANTS.STEP_DELAY);
 		driver.navigate().back();
 		
 		
 		 loginPage.registertoSellPuppy.click();
-		 Thread.sleep(2000);
+		 Thread.sleep(CONSTANTS.STEP_DELAY);
 		 String sellUrl =driver.getCurrentUrl();
 		// Assert.assertEquals("https://www.puppyfind.com/list/", sellUrl);
-		 Thread.sleep(2000);
+		 Thread.sleep(CONSTANTS.STEP_DELAY);
 		 driver.navigate().to("https://www.puppyfind.com/login/");
 		 
 		 loginPage.ForgetPwd.click();
 		 String forgetPwd = driver.getCurrentUrl();
-		 Thread.sleep(2000);
+		 Thread.sleep(CONSTANTS.STEP_DELAY);
 		// Assert.assertEquals("https://www.puppyfind.com/login_help/?back=", forgetPwd);
-		 Thread.sleep(2000);
+		 Thread.sleep(CONSTANTS.STEP_DELAY);
 		 driver.navigate().back();
 		 
 		 System.out.println("Links are responding to their respective pages");
