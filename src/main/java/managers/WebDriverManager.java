@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
@@ -53,7 +54,11 @@ public class WebDriverManager{
 	      break;
 	        case CHROME : 
 	         System.setProperty(CHROME_DRIVER_PROPERTY, configFileReader.getDriverPath());
-	         driver = new ChromeDriver();
+	            ChromeOptions chromeOptions = new ChromeOptions();
+	            if(configFileReader.isHeadless()) {
+	            	chromeOptions.addArguments("--headless");
+	            }
+	            driver = new ChromeDriver(chromeOptions);
 	     break;
 	        case INTERNETEXPLORER : driver = new InternetExplorerDriver();
 	     break;
