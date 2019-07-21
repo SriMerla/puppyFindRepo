@@ -78,7 +78,15 @@ public class ConfigFileReader {
 		return true;
 	}
 	
-	
+	public Boolean isHeadless() {
+		String mode = System.getProperty("mode");
+				
+		if(mode == null) {
+			mode=properties.getProperty("mode");
+		}
+		
+		return (mode != null && "headless".equals(mode));		
+	}
 	}
 
 
