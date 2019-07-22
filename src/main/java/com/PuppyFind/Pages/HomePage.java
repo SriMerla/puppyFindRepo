@@ -1,5 +1,6 @@
 package com.PuppyFind.Pages;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -63,8 +64,8 @@ public class HomePage {
 	@FindBy(how=How.XPATH, using="/h1[contains(text(),'Popular Dog Breeds')]")
 	public WebElement popularPuppies;
 	
-	@FindBy(how=How.XPATH, using="//a[@title='Pug Puppies for Sale']")
-	public WebElement pugPuppies;
+	@FindBy(how=How.XPATH, using="//div[@class='popular-breeds']//div[2]//div[1]//div[1]")
+	public WebElement Puppies;
 	
 	@FindBy(how=How.XPATH, using="//a[@title='PuppyFind My Account']")
 	public WebElement myAccount;
@@ -90,6 +91,12 @@ public class HomePage {
    public void getSupport() throws InterruptedException {
 	   support.click();
 	   Thread.sleep(2000);
+   }
+   
+   public void signOut() {
+	   logout.click();
+	   driver.switchTo().alert().accept();
+	   
    }
 
 }

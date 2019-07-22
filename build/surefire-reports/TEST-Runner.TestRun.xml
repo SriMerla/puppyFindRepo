@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Runner.TestRun" time="0.04" tests="30" errors="2" skipped="3" failures="0">
+<testsuite name="Runner.TestRun" time="0.005" tests="42" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_211\jre\bin"/>
@@ -26,7 +26,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\srime\eclipse-workspace1\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf3999889855977420962.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\srime\eclipse-workspace1\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf930167896384132418.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_211\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_211/bin/server;C:/Program Files/Java/jre1.8.0_211/bin;C:/Program Files/Java/jre1.8.0_211/lib/amd64;C:\Program Files (x86)\Parallels\Parallels Tools\Applications;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\srime\AppData\Local\Microsoft\WindowsApps;C:\Program Files\maven\apache-maven-3.6.1\\bin;C:\Program Files\Java\jdk1.8.0_211\bin;;C:\Users\srime\Desktop\eclipse-jee-2018-12-R-win32-x86_64\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -61,92 +61,38 @@
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
   <testcase name="Given user is on home page" classname="Scenario: User Checks the functionalities available on the find a puppy page" time="0.004"/>
-  <testcase name="And user navigates to find a puppy page" classname="Scenario: User Checks the functionalities available on the find a puppy page" time="0.004"/>
+  <testcase name="And user navigates to find a puppy page" classname="Scenario: User Checks the functionalities available on the find a puppy page" time="0"/>
   <testcase name="Then user verifies find a puppy by breed ,by state and by Life style are displayed" classname="Scenario: User Checks the functionalities available on the find a puppy page" time="0"/>
   <testcase name="And user verifes search by keyword , browse alphabetically are enable" classname="Scenario: User Checks the functionalities available on the find a puppy page" time="0"/>
   <testcase name="And verifies the number results displayed on the page" classname="Scenario: User Checks the functionalities available on the find a puppy page" time="0"/>
   <testcase name="Scenario: User Checks the functionalities available on the find a puppy page" classname="Scenario: User Checks the functionalities available on the find a puppy page" time="0"/>
-  <testcase name="Given user navigates to Find a puppy page" classname="Scenario: User finds a puppy by breed" time="0"/>
-  <testcase name="And user enters the breed" classname="Scenario: User finds a puppy by breed" time="0"/>
+  <testcase name="Given user is on home page" classname="Scenario: User finds a puppy by breed" time="0"/>
+  <testcase name="And user navigates to find a puppy page" classname="Scenario: User finds a puppy by breed" time="0"/>
+  <testcase name="Then user enters the breed" classname="Scenario: User finds a puppy by breed" time="0"/>
   <testcase name="And user clicks Find by breed button" classname="Scenario: User finds a puppy by breed" time="0"/>
   <testcase name="And user verifies the search results" classname="Scenario: User finds a puppy by breed" time="0"/>
   <testcase name="Scenario: User finds a puppy by breed" classname="Scenario: User finds a puppy by breed" time="0"/>
+  <testcase name="Given user is on home page" classname="Scenario: User finds a puppy by state" time="0.001"/>
+  <testcase name="And user navigates to find a puppy page" classname="Scenario: User finds a puppy by state" time="0"/>
+  <testcase name="When user selects state from dropdown" classname="Scenario: User finds a puppy by state" time="0"/>
+  <testcase name="And user clicks the search my state button" classname="Scenario: User finds a puppy by state" time="0"/>
+  <testcase name="Then user verifies the puppies for sale in the state" classname="Scenario: User finds a puppy by state" time="0"/>
+  <testcase name="Scenario: User finds a puppy by state" classname="Scenario: User finds a puppy by state" time="0"/>
+  <testcase name="Given user is on home page" classname="Scenario: User finds a puppy by life style" time="0"/>
+  <testcase name="And user navigates to find a puppy page" classname="Scenario: User finds a puppy by life style" time="0"/>
+  <testcase name="When user selects size , upkeep, purpose" classname="Scenario: User finds a puppy by life style" time="0"/>
+  <testcase name="Then user verifies the search results for find puppy by life style" classname="Scenario: User finds a puppy by life style" time="0"/>
+  <testcase name="Scenario: User finds a puppy by life style" classname="Scenario: User finds a puppy by life style" time="0"/>
   <testcase name="Given User is on WebPage" classname="Scenario: User verifies all the links in the home page" time="0"/>
   <testcase name="When user verifies all the links in the home page" classname="Scenario: User verifies all the links in the home page" time="0"/>
   <testcase name="Then user confirms the links are corresponding to their respective pages" classname="Scenario: User verifies all the links in the home page" time="0"/>
-  <testcase name="Scenario: User verifies all the links in the home page" classname="Scenario: User verifies all the links in the home page" time="0.004"/>
+  <testcase name="Scenario: User verifies all the links in the home page" classname="Scenario: User verifies all the links in the home page" time="0"/>
   <testcase name="Given user is on homepage" classname="Scenario: User selects a puppy from popular Dog breeds on home Page" time="0"/>
-  <testcase name="When user Clicks a link in popular dog breeds" classname="Scenario: User selects a puppy from popular Dog breeds on home Page" time="0.012">
-    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@title=&apos;Pug Puppies for Sale&apos;]&quot;}&#10;  (Session info: chrome=75.0.3770.142)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.0&apos;, revision: &apos;2ecb7d9a&apos;, time: &apos;2018-10-31T20:09:30&apos;&#10;System info: host: &apos;DESKTOP-QM788VP&apos;, ip: &apos;192.168.1.97&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\srime\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60527}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: c250f375c540eeec0a11f4a4e86c0b54&#10;*** Element info: {Using=xpath, value=//a[@title=&apos;Pug Puppies for Sale&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title='Pug Puppies for Sale']"}
-  (Session info: chrome=75.0.3770.142)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
-System info: host: 'DESKTOP-QM788VP', ip: '192.168.1.97', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\srime\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60527}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c250f375c540eeec0a11f4a4e86c0b54
-*** Element info: {Using=xpath, value=//a[@title='Pug Puppies for Sale']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy16.click(Unknown Source)
-	at StepDefinitions.homeStepDef.user_Clicks_a_link_in_popular_dog_breeds(homeStepDef.java:124)
-	at ✽.When user Clicks a link in popular dog breeds(home.feature:10)
-</error>
-  </testcase>
-  <testcase name="Scenario: User selects a puppy from popular Dog breeds on home Page" classname="Scenario: User selects a puppy from popular Dog breeds on home Page" time="0.016">
-    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@title=&apos;Pug Puppies for Sale&apos;]&quot;}&#10;  (Session info: chrome=75.0.3770.142)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.0&apos;, revision: &apos;2ecb7d9a&apos;, time: &apos;2018-10-31T20:09:30&apos;&#10;System info: host: &apos;DESKTOP-QM788VP&apos;, ip: &apos;192.168.1.97&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\srime\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60527}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: c250f375c540eeec0a11f4a4e86c0b54&#10;*** Element info: {Using=xpath, value=//a[@title=&apos;Pug Puppies for Sale&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title='Pug Puppies for Sale']"}
-  (Session info: chrome=75.0.3770.142)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
-System info: host: 'DESKTOP-QM788VP', ip: '192.168.1.97', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\srime\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60527}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c250f375c540eeec0a11f4a4e86c0b54
-*** Element info: {Using=xpath, value=//a[@title='Pug Puppies for Sale']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy16.click(Unknown Source)
-	at StepDefinitions.homeStepDef.user_Clicks_a_link_in_popular_dog_breeds(homeStepDef.java:124)
-	at ✽.When user Clicks a link in popular dog breeds(home.feature:10)
-</error>
-  </testcase>
-  <testcase name="Then user verifies the details of the breed" classname="Scenario: User selects a puppy from popular Dog breeds on home Page" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="And clicks on that breed puppies for sale" classname="Scenario: User selects a puppy from popular Dog breeds on home Page" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="And verifies the search results displayed" classname="Scenario: User selects a puppy from popular Dog breeds on home Page" time="0">
-    <skipped/>
-  </testcase>
+  <testcase name="When user Clicks a link in popular dog breeds" classname="Scenario: User selects a puppy from popular Dog breeds on home Page" time="0"/>
+  <testcase name="Then user verifies the details of the breed" classname="Scenario: User selects a puppy from popular Dog breeds on home Page" time="0"/>
+  <testcase name="And clicks on that breed puppies for sale" classname="Scenario: User selects a puppy from popular Dog breeds on home Page" time="0"/>
+  <testcase name="And verifies the search results displayed" classname="Scenario: User selects a puppy from popular Dog breeds on home Page" time="0"/>
+  <testcase name="Scenario: User selects a puppy from popular Dog breeds on home Page" classname="Scenario: User selects a puppy from popular Dog breeds on home Page" time="0"/>
   <testcase name="Given user is on web page" classname="Scenario: user enters valid credentials to login to the web page" time="0"/>
   <testcase name="When user enters valid credentials" classname="Scenario: user enters valid credentials to login to the web page" time="0"/>
   <testcase name="And user selects the action from drop down and submit" classname="Scenario: user enters valid credentials to login to the web page" time="0"/>

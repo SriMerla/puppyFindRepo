@@ -68,17 +68,33 @@ public class FindAPuppyPage {
 	@FindBy(how = How.XPATH, using="//*[@id=\"ui-id-1\"]")
 	public WebElement dropDown;
 	
+	@FindBy(how = How.XPATH,using="//table[@width='100%']//tbody//tr//td//h1")
+	public WebElement checkStateRes;
+	
+	@FindBy(how = How.XPATH,using="//a[contains(text(),'French Bulldog')]")
+	public WebElement checkLifestyleRes;
+	
+	
 	public void byBreed(String breedName){
 		BreedName.sendKeys(breedName);
-		
+		 
 			
 	}
 	
 	public void byState(String statename) {
 		StateName.click(); 
 		Select state = new Select(StateName);
-		state.selectByVisibleText(statename);
+		state.selectByValue(statename);
+	
 	}
+	
+	public void stateRes() {
+		String res = checkStateRes.getText();
+		System.out.println(res);
+		 
+		
+	}
+	
 	
 	public void byLifeStyle(String size, String behaviour, String purpose) throws InterruptedException{
 		
@@ -95,6 +111,12 @@ public class FindAPuppyPage {
 		p.selectByValue(purpose);
 		Thread.sleep(2000);
 		FindMatchButton.click();	
+		
+	}
+	public void lifeStyleRes() {
+		
+		String res = checkLifestyleRes.getText();
+		System.out.println(res);
 		
 	}
 	
