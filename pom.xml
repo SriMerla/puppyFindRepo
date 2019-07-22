@@ -112,6 +112,12 @@
 			<artifactId>gherkin</artifactId>
 			<version>6.0.17</version>
 		</dependency>
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-picocontainer</artifactId>
+			<version>1.2.5</version>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 	<build>
 		<directory>${basedir}/build</directory>

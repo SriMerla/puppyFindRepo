@@ -12,7 +12,7 @@ import enums.EnvironmentType;
 public class ConfigFileReader {
 	
 	public Properties properties;
-	public String propertyFilePath= "C:\\Users\\srime\\eclipse-workspace1\\PuppyFind\\src\\test\\resources\\Configs\\config.properties";
+	public String propertyFilePath= "src\\test\\resources\\Configs\\config.properties";
 
 	public ConfigFileReader(){
 		BufferedReader reader;
@@ -76,6 +76,18 @@ public class ConfigFileReader {
 		String windowSize = properties.getProperty("windowMaximize");
 		if(windowSize != null) return Boolean.valueOf(windowSize);
 		return true;
+	}
+	
+	public String getUserEmail() {
+		String  userEmail= properties.getProperty("useremail");
+		 return userEmail;
+		
+	}
+	
+	public String getPassword() {
+		String  pwd = properties.getProperty("password");
+	    return pwd;
+		
 	}
 	
 	public Boolean isHeadless() {

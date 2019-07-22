@@ -7,8 +7,10 @@ import static org.junit.Assert.assertEquals;
 import org.apache.http.util.Asserts;
 import org.openqa.selenium.WebDriver;
 
+import com.PuppyFind.Pages.HomePage;
 import com.PuppyFind.Pages.LoginPage;
 
+import cucumber.TextContext;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -19,7 +21,6 @@ import managers.WebDriverManager;
 import util.CONSTANTS;
 
 public class loginStepDef {
-	
 	WebDriver driver;
 	LoginPage loginPage;
 	PageObjectManager pageObjectManager;
@@ -38,7 +39,7 @@ public class loginStepDef {
 		pageObjectManager = new PageObjectManager(driver);
 		loginPage = pageObjectManager.getLoginPage();
 		loginPage.useronloginpage();
-		loginPage.loginIntoPage("puppydemo@gmail.com", "puppytest");
+		loginPage.loginIntoPage();
 		
 	    
 	}
@@ -95,7 +96,6 @@ public class loginStepDef {
 		Thread.sleep(CONSTANTS.STEP_DELAY);
 		driver.navigate().back();
 		
-		
 		 loginPage.registertoSellPuppy.click();
 		 Thread.sleep(CONSTANTS.STEP_DELAY);
 		 String sellUrl =driver.getCurrentUrl();
@@ -113,6 +113,5 @@ public class loginStepDef {
 		 System.out.println("Links are responding to their respective pages");
 	    webDriverManager.closeDriver();
 	}
-
 
 }

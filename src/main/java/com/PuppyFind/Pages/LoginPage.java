@@ -8,11 +8,14 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
+import dataProviders.ConfigFileReader;
+
 
 
 public class LoginPage {
 	
 	WebDriver driver;
+	ConfigFileReader configFileReader;
 	
 	@FindBy(how = How.XPATH, using="//a[@title='PuppyFind Member Login']")
 	public WebElement memberLogin;
@@ -54,8 +57,10 @@ public class LoginPage {
 		memberLogin.click();
 	}
 	
-	public void loginIntoPage(String email, String pass) throws InterruptedException{
-		 
+	public void loginIntoPage() throws InterruptedException{
+		configFileReader = new ConfigFileReader();
+		 String email = configFileReader.getUserEmail();
+		 String pass = configFileReader.getPassword();
 		Email.sendKeys(email);
 		password.sendKeys(pass);
 		Thread.sleep(2000);

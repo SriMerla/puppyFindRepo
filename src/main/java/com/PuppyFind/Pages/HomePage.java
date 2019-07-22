@@ -64,7 +64,7 @@ public class HomePage {
 	public WebElement popularPuppies;
 	
 	@FindBy(how=How.XPATH, using="//a[@title='Pug Puppies for Sale']")
-	public WebElement pugPupppies;
+	public WebElement pugPuppies;
 	
 	@FindBy(how=How.XPATH, using="//a[@title='PuppyFind My Account']")
 	public WebElement myAccount;

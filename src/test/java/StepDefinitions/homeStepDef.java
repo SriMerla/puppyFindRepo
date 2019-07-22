@@ -1,5 +1,7 @@
 package StepDefinitions;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
 import com.PuppyFind.Pages.HomePage;
@@ -102,7 +104,48 @@ public class homeStepDef {
 		System.out.println("All the links in the home page are corresponding to their respective pages");
 	    webDriverManager.closeDriver();
 		
-	   
+	}
+	
+	@Given("^user is on homepage$")
+	public void user_is_on_homepage() throws InterruptedException {
+		webDriverManager = new WebDriverManager();
+		driver = webDriverManager.getDriver();
+		Thread.sleep(CONSTANTS.STEP_DELAY);
+		
+	}
+
+	@When("^user Clicks a link in popular dog breeds$")
+	public void user_Clicks_a_link_in_popular_dog_breeds() throws InterruptedException  {
+		pageObjectManager = new PageObjectManager(driver);
+		homePage = pageObjectManager.getHomePage();
+		JavascriptExecutor js = ((JavascriptExecutor) driver);
+		js.executeScript("window.scrollBy(0,1100)");
+		Thread.sleep(CONSTANTS.STEP_DELAY);
+		homePage.pugPuppies.click();
+	}
+
+	@Then("^user verifies the details of the breed$")
+	public void user_verifies_the_details_of_the_breed() {
+		String BreedDetail = driver.findElement(By.xpath("//h2[@class='margin-bottom-0']")).getText();
+		Assert.assertEquals("Breed Info", BreedDetail);
+		
+		
+	}
+
+	@Then("^clicks on that breed puppies for sale$")
+	public void clicks_on_that_breed_puppies_for_sale() throws InterruptedException {
+		JavascriptExecutor js = ((JavascriptExecutor) driver);
+		js.executeScript("window.scrollBy(0,900)");
+		Thread.sleep(CONSTANTS.STEP_DELAY);
+		driver.findElement(By.xpath("	//a[contains(text(),'Pug Puppies for Sale')]")).click();
+		
+	}
+
+	@Then("^verifies the search results displayed$")
+	public void verifies_the_search_results_displayed()  {
+		String searchRes = driver.findElement(By.xpath("//table[@width='100%']//tbody//tr//td//h1")).getText();
+		Assert.assertEquals("Pug Puppies for Sale", searchRes);
+	    webDriverManager.closeDriver();
 	}
 	
 	
