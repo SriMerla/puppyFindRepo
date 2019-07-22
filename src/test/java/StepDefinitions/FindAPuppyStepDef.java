@@ -13,6 +13,7 @@ import cucumber.api.java.en.When;
 import junit.framework.Assert;
 import managers.PageObjectManager;
 import managers.WebDriverManager;
+import util.CONSTANTS;
 
 public class FindAPuppyStepDef {
 	WebDriver driver;
@@ -62,6 +63,8 @@ public class FindAPuppyStepDef {
 	public void verifies_the_number_results_displayed_on_the_page() {
 		String res = findAPuppyPage.numberOfResults.getText();
 		Assert.assertEquals("1 - 10 of 26", res);
+		
+		System.out.println("Number of results displayes on the page" + res);
 		webDriverManager.closeDriver();
 	   
 	}
@@ -92,7 +95,46 @@ public class FindAPuppyStepDef {
 	public void user_verifies_the_search_results() throws Throwable {
       String res = driver.findElement(By.xpath("//a[contains(text(),'Frenchie Pug')]")).getText();
       Assert.assertEquals("Frenchie Pug", res);
+      webDriverManager.closeDriver();
 	   
 	}
+	
+	@When("^user selects state from dropdown$")
+	public void user_selects_state_from_dropdown() throws InterruptedException  {
+		findAPuppyPage.byState("CA");
+		Thread.sleep(CONSTANTS.STEP_DELAY);
+		//driver.navigate().back();
+		
+	   
+	}
+
+	@When("^user clicks the search my state button$")
+	public void user_clicks_the_search_my_state_button() throws InterruptedException  {
+		findAPuppyPage.SubmitState.click();
+		Thread.sleep(CONSTANTS.STEP_DELAY);
+		
+		
+	}
+
+	@Then("^user verifies the puppies for sale in the state$")
+	public void user_verifies_the_puppies_for_sale_in_the_state() {
+		findAPuppyPage.stateRes();
+		webDriverManager.closeDriver();
+	   
+	}
+	@When("^user selects size , upkeep, purpose$")
+	public void user_selects_size_upkeep_purpose() throws InterruptedException  {
+		findAPuppyPage.byLifeStyle("s", "e", "pet");
+	    
+	}
+
+	@Then("^user verifies the search results for find puppy by life style$")
+	public void user_verifies_the_search_results_for_find_puppy_by_life_style()  {
+		findAPuppyPage.lifeStyleRes();
+		webDriverManager.closeDriver();
+	   
+	}
+
+	
 
 }
