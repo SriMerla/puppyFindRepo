@@ -1,5 +1,8 @@
 Runner\TestRun.class
 StepDefinitions\FindAPuppyStepDef.class
 util\CONSTANTS.class
-StepDefinitions\homeStepDef.class
+StepDefinitions\LogOutStepDef.class
+StepDefinitions\CreateAnAccountStepDef.class
 StepDefinitions\loginStepDef.class
+StepDefinitions\UpdateAccount.class
+StepDefinitions\homeStepDef.class

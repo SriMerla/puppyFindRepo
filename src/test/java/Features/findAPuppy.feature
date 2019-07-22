@@ -23,6 +23,10 @@ Feature: Find A Puppy Fuctionality
    Scenario:User finds a puppy by life style
     When user selects size , upkeep, purpose
     Then user verifies the search results for find puppy by life style
+    
+   Scenario: User browse alphabetically for puppies
+     When user Clicks on any alphabet on appears on the page
+     Then user verifies the browse results
 
  
  

@@ -134,6 +134,21 @@ public class FindAPuppyStepDef {
 		webDriverManager.closeDriver();
 	   
 	}
+	
+	@When("^user Clicks on any alphabet on appears on the page$")
+	public void user_Clicks_on_any_alphabet_on_appears_on_the_page() {
+		findAPuppyPage.alphabeticsearch();
+	    
+	}
+
+	@Then("^user verifies the browse results$")
+	public void user_verifies_the_browse_results() {
+		String res = driver.getCurrentUrl();
+		Assert.assertEquals("https://www.puppyfind.com/browse/?str=g", res);
+		webDriverManager.closeDriver();
+	    
+	}
+
 
 	
 

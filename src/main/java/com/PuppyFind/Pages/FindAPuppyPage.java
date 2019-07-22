@@ -125,6 +125,14 @@ public class FindAPuppyPage {
 		
 	}
 	
+	public void alphabeticsearch() {
+		
+		String alpha = BrowseAlpha.getText();
+		System.out.println(alpha);
+		AlphabetG.click();
+		
+	}
+	
 	
 }
 
