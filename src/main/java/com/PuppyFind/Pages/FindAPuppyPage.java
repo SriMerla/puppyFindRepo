@@ -120,10 +120,6 @@ public class FindAPuppyPage {
 		
 	}
 	
-	public void searchOptions(String searchName) {
-		SearchOptions.sendKeys(searchName);
-		
-	}
 	
 	public void alphabeticsearch() {
 		

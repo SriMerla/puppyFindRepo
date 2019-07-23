@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Runner.TestRun" time="0.051" tests="38" errors="0" skipped="0" failures="0">
+<testsuite name="Runner.TestRun" time="0.073" tests="77" errors="0" skipped="0" failures="2">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_211\jre\bin"/>
     <property name="java.vm.version" value="25.211-b12"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\srime\eclipse-workspace1\PuppyFind"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:/Users/srime/eclipse-workspace1/PuppyFind"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -26,24 +26,26 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\srime\eclipse-workspace1\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf8555196074364574907.tmp"/>
+    <property name="classworlds.conf" value="C:/Program Files/maven/apache-maven-3.6.1/bin/m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_211\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_211/bin/server;C:/Program Files/Java/jre1.8.0_211/bin;C:/Program Files/Java/jre1.8.0_211/lib/amd64;C:\Program Files (x86)\Parallels\Parallels Tools\Applications;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\srime\AppData\Local\Microsoft\WindowsApps;C:\Program Files\maven\apache-maven-3.6.1\\bin;C:\Program Files\Java\jdk1.8.0_211\bin;;C:\Users\srime\Desktop\eclipse-jee-2018-12-R-win32-x86_64\eclipse;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_211\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\srime\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\srime\bin;C:\Program Files (x86)\Parallels\Parallels Tools\Applications;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Users\srime\AppData\Local\Microsoft\WindowsApps;C:\Program Files\maven\apache-maven-3.6.1\bin;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;."/>
+    <property name="maven.conf" value="C:/Program Files/maven/apache-maven-3.6.1/conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:/Program Files/maven/apache-maven-3.6.1/lib/jansi-native"/>
     <property name="user.home" value="C:\Users\srime"/>
     <property name="user.timezone" value="America/Grand_Turk"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="Cp1252"/>
     <property name="user.name" value="srime"/>
-    <property name="java.class.path" value="C:\Users\srime\Desktop\eclipse-jee-2018-12-R-win32-x86_64\eclipse\plugins\org.eclipse.m2e.maven.runtime_1.10.0.20181127-2120\jars\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.class.path" value="C:/Program Files/maven/apache-maven-3.6.1/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_211\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -52,7 +54,7 @@
     <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_211\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_211\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_211\jre\classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Users\srime\eclipse-workspace1\PuppyFind\EMBEDDED"/>
+    <property name="maven.home" value="C:\Program Files\maven\apache-maven-3.6.1"/>
     <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -60,42 +62,95 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="Given user is on webPage and logs in" classname="Scenario: user updates the account" time="0.004"/>
-  <testcase name="And user navigates to My Account" classname="Scenario: user updates the account" time="0"/>
+  <testcase name="Given user is on webPage and logs in" classname="Scenario: user updates the account" time="0.002"/>
+  <testcase name="And user navigates to My Account" classname="Scenario: user updates the account" time="0.004"/>
   <testcase name="When user enters the details to update the account" classname="Scenario: user updates the account" time="0"/>
   <testcase name="Then verifies the login confirmation" classname="Scenario: user updates the account" time="0"/>
-  <testcase name="Scenario: user updates the account" classname="Scenario: user updates the account" time="0.031"/>
+  <testcase name="Scenario: user updates the account" classname="Scenario: user updates the account" time="0.016"/>
+  <testcase name="Given user is on home page and navigates to find a puppy page" classname="Scenario: user adds a puppy to favourites and contact the seller" time="0"/>
+  <testcase name="When user searchs for puppy" classname="Scenario: user adds a puppy to favourites and contact the seller" time="0"/>
+  <testcase name="And user clicks puppy for sale and select a puppy" classname="Scenario: user adds a puppy to favourites and contact the seller" time="0.001"/>
+  <testcase name="And user clicks on add favorites" classname="Scenario: user adds a puppy to favourites and contact the seller" time="0"/>
+  <testcase name="Then click on contact via email" classname="Scenario: user adds a puppy to favourites and contact the seller" time="0"/>
+  <testcase name="Scenario: user adds a puppy to favourites and contact the seller" classname="Scenario: user adds a puppy to favourites and contact the seller" time="0"/>
+  <testcase name="Given user is on home page and navigates to find a puppy page" classname="Scenario: user verifies my favorites" time="0"/>
+  <testcase name="Then user checks the number of puppies in favorites" classname="Scenario: user verifies my favorites" time="0"/>
+  <testcase name="And user add a puppy to favorites" classname="Scenario: user verifies my favorites" time="0"/>
+  <testcase name="And user verifies the number of puppies in favorites after adding another puppy" classname="Scenario: user verifies my favorites" time="0"/>
+  <testcase name="Scenario: user verifies my favorites" classname="Scenario: user verifies my favorites" time="0.001"/>
   <testcase name="Given user is on loginpage" classname="Scenario: Create account for multiple users" time="0"/>
   <testcase name="And user clicks on link buying a puppy?" classname="Scenario: Create account for multiple users" time="0"/>
   <testcase name="When user enters valid data on Page to create an account" classname="Scenario: Create account for multiple users" time="0"/>
-  <testcase name="Then user verifies confirmation message" classname="Scenario: Create account for multiple users" time="0"/>
-  <testcase name="Scenario: Create account for multiple users" classname="Scenario: Create account for multiple users" time="0.016"/>
+  <testcase name="Then user verifies confirmation message" classname="Scenario: Create account for multiple users" time="0.001"/>
+  <testcase name="Scenario: Create account for multiple users" classname="Scenario: Create account for multiple users" time="0.002"/>
+  <testcase name="Given user is on home page" classname="Scenario: User Checks the functionalities available on the find a puppy page" time="0.001"/>
+  <testcase name="And user navigates to find a puppy page" classname="Scenario: User Checks the functionalities available on the find a puppy page" time="0"/>
+  <testcase name="Then user verifies find a puppy by breed ,by state and by Life style are displayed" classname="Scenario: User Checks the functionalities available on the find a puppy page" time="0"/>
+  <testcase name="And user verifes search by keyword , browse alphabetically are enable" classname="Scenario: User Checks the functionalities available on the find a puppy page" time="0"/>
+  <testcase name="And verifies the number results displayed on the page" classname="Scenario: User Checks the functionalities available on the find a puppy page" time="0"/>
+  <testcase name="Scenario: User Checks the functionalities available on the find a puppy page" classname="Scenario: User Checks the functionalities available on the find a puppy page" time="0.001"/>
+  <testcase name="Given user is on home page" classname="Scenario: User finds a puppy by breed" time="0"/>
+  <testcase name="And user navigates to find a puppy page" classname="Scenario: User finds a puppy by breed" time="0"/>
+  <testcase name="Then user enters the breed" classname="Scenario: User finds a puppy by breed" time="0"/>
+  <testcase name="And user clicks Find by breed button" classname="Scenario: User finds a puppy by breed" time="0.001"/>
+  <testcase name="And user verifies the search results" classname="Scenario: User finds a puppy by breed" time="0"/>
+  <testcase name="Scenario: User finds a puppy by breed" classname="Scenario: User finds a puppy by breed" time="0.001"/>
+  <testcase name="Given user is on home page" classname="Scenario: User finds a puppy by state" time="0"/>
+  <testcase name="And user navigates to find a puppy page" classname="Scenario: User finds a puppy by state" time="0"/>
+  <testcase name="When user selects state from dropdown" classname="Scenario: User finds a puppy by state" time="0"/>
+  <testcase name="And user clicks the search my state button" classname="Scenario: User finds a puppy by state" time="0"/>
+  <testcase name="Then user verifies the puppies for sale in the state" classname="Scenario: User finds a puppy by state" time="0"/>
+  <testcase name="Scenario: User finds a puppy by state" classname="Scenario: User finds a puppy by state" time="0.001"/>
+  <testcase name="Given user is on home page" classname="Scenario: User finds a puppy by life style" time="0.001"/>
+  <testcase name="And user navigates to find a puppy page" classname="Scenario: User finds a puppy by life style" time="0"/>
+  <testcase name="When user selects size , upkeep, purpose" classname="Scenario: User finds a puppy by life style" time="0"/>
+  <testcase name="Then user verifies the search results for find puppy by life style" classname="Scenario: User finds a puppy by life style" time="0"/>
+  <testcase name="Scenario: User finds a puppy by life style" classname="Scenario: User finds a puppy by life style" time="0.001"/>
   <testcase name="Given user is on home page" classname="Scenario: User browse alphabetically for puppies" time="0"/>
   <testcase name="And user navigates to find a puppy page" classname="Scenario: User browse alphabetically for puppies" time="0"/>
   <testcase name="When user Clicks on any alphabet on appears on the page" classname="Scenario: User browse alphabetically for puppies" time="0"/>
   <testcase name="Then user verifies the browse results" classname="Scenario: User browse alphabetically for puppies" time="0"/>
-  <testcase name="Scenario: User browse alphabetically for puppies" classname="Scenario: User browse alphabetically for puppies" time="0"/>
+  <testcase name="Scenario: User browse alphabetically for puppies" classname="Scenario: User browse alphabetically for puppies" time="0.001"/>
   <testcase name="Given User is on WebPage" classname="Scenario: User verifies all the links in the home page" time="0"/>
   <testcase name="When user verifies all the links in the home page" classname="Scenario: User verifies all the links in the home page" time="0"/>
   <testcase name="Then user confirms the links are corresponding to their respective pages" classname="Scenario: User verifies all the links in the home page" time="0"/>
-  <testcase name="Scenario: User verifies all the links in the home page" classname="Scenario: User verifies all the links in the home page" time="0"/>
+  <testcase name="Scenario: User verifies all the links in the home page" classname="Scenario: User verifies all the links in the home page" time="0.001"/>
   <testcase name="Given user is on homepage" classname="Scenario: User selects a puppy from popular Dog breeds on home Page" time="0"/>
   <testcase name="When user Clicks a link in popular dog breeds" classname="Scenario: User selects a puppy from popular Dog breeds on home Page" time="0"/>
   <testcase name="Then user verifies the details of the breed" classname="Scenario: User selects a puppy from popular Dog breeds on home Page" time="0"/>
   <testcase name="And clicks on that breed puppies for sale" classname="Scenario: User selects a puppy from popular Dog breeds on home Page" time="0"/>
   <testcase name="And verifies the search results displayed" classname="Scenario: User selects a puppy from popular Dog breeds on home Page" time="0"/>
-  <testcase name="Scenario: User selects a puppy from popular Dog breeds on home Page" classname="Scenario: User selects a puppy from popular Dog breeds on home Page" time="0"/>
+  <testcase name="Scenario: User selects a puppy from popular Dog breeds on home Page" classname="Scenario: User selects a puppy from popular Dog breeds on home Page" time="0.001"/>
   <testcase name="Given user is on  homepage" classname="Scenario: User logout from the webpage" time="0"/>
   <testcase name="When user clicks the logout button" classname="Scenario: User logout from the webpage" time="0"/>
   <testcase name="Then user verifies logout confirmation" classname="Scenario: User logout from the webpage" time="0"/>
-  <testcase name="Scenario: User logout from the webpage" classname="Scenario: User logout from the webpage" time="0"/>
+  <testcase name="Scenario: User logout from the webpage" classname="Scenario: User logout from the webpage" time="0.014"/>
   <testcase name="Given user is on web page" classname="Scenario: user enters valid credentials to login to the web page" time="0"/>
   <testcase name="When user enters valid credentials" classname="Scenario: user enters valid credentials to login to the web page" time="0"/>
   <testcase name="And user selects the action from drop down and submit" classname="Scenario: user enters valid credentials to login to the web page" time="0"/>
   <testcase name="Then user is on find a puppy page" classname="Scenario: user enters valid credentials to login to the web page" time="0"/>
-  <testcase name="Scenario: user enters valid credentials to login to the web page" classname="Scenario: user enters valid credentials to login to the web page" time="0"/>
-  <testcase name="Given user is on login page" classname="Scenario: user verifies links on the login page" time="0"/>
+  <testcase name="Scenario: user enters valid credentials to login to the web page" classname="Scenario: user enters valid credentials to login to the web page" time="0.001"/>
+  <testcase name="Given user is on login page" classname="Scenario: user verifies links on the login page" time="0.001"/>
   <testcase name="When user verifies all the links are enable" classname="Scenario: user verifies links on the login page" time="0"/>
   <testcase name="Then user clicks the links to verify the pages responding to the links" classname="Scenario: user verifies links on the login page" time="0"/>
-  <testcase name="Scenario: user verifies links on the login page" classname="Scenario: user verifies links on the login page" time="0"/>
+  <testcase name="Scenario: user verifies links on the login page" classname="Scenario: user verifies links on the login page" time="0.001"/>
+  <testcase name="Given user is on find a puppy" classname="Scenario: User browse for puppies from search option" time="0"/>
+  <testcase name="When user enters the breed name" classname="Scenario: User browse for puppies from search option" time="0"/>
+  <testcase name="Then user verifies search results appeared in dropdown and selects puppy" classname="Scenario: User browse for puppies from search option" time="0"/>
+  <testcase name="And user verifies the selectes item is displayed on the page" classname="Scenario: User browse for puppies from search option" time="0.009">
+    <failure message="expected:&lt;...submit=1&amp;str=Golden+[]Retriever&gt; but was:&lt;...submit=1&amp;str=Golden+[Cocker+]Retriever&gt;" type="junit.framework.ComparisonFailure"><![CDATA[junit.framework.ComparisonFailure: expected:<...submit=1&str=Golden+[]Retriever> but was:<...submit=1&str=Golden+[Cocker+]Retriever>
+	at junit.framework.Assert.assertEquals(Assert.java:100)
+	at junit.framework.Assert.assertEquals(Assert.java:107)
+	at StepDefinitions.SearchOptionsStepDef.user_verifies_the_selectes_item_is_displayed_on_the_page(SearchOptionsStepDef.java:57)
+	at ✽.And user verifies the selectes item is displayed on the page(searchOptions.feature:7)
+]]></failure>
+  </testcase>
+  <testcase name="Scenario: User browse for puppies from search option" classname="Scenario: User browse for puppies from search option" time="0.01">
+    <failure message="expected:&lt;...submit=1&amp;str=Golden+[]Retriever&gt; but was:&lt;...submit=1&amp;str=Golden+[Cocker+]Retriever&gt;" type="junit.framework.ComparisonFailure"><![CDATA[junit.framework.ComparisonFailure: expected:<...submit=1&str=Golden+[]Retriever> but was:<...submit=1&str=Golden+[Cocker+]Retriever>
+	at junit.framework.Assert.assertEquals(Assert.java:100)
+	at junit.framework.Assert.assertEquals(Assert.java:107)
+	at StepDefinitions.SearchOptionsStepDef.user_verifies_the_selectes_item_is_displayed_on_the_page(SearchOptionsStepDef.java:57)
+	at ✽.And user verifies the selectes item is displayed on the page(searchOptions.feature:7)
+]]></failure>
+  </testcase>
 </testsuite>
