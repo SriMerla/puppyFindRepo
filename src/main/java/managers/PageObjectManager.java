@@ -8,6 +8,7 @@ import com.PuppyFind.Pages.FindAPuppyPage;
 import com.PuppyFind.Pages.HomePage;
 import com.PuppyFind.Pages.LoginPage;
 import com.PuppyFind.Pages.UpdatePage;
+import com.PuppyFind.Pages.SearchOptionsPage;
 
 
 public class PageObjectManager {
@@ -16,6 +17,7 @@ public class PageObjectManager {
 		 public LoginPage loginPage;
 		 public FindAPuppyPage findAPuppyPage;
 		 public HomePage homePage;
+		 public SearchOptionsPage searchOptionsPage;
 		 public CreateAccountPage createAccountPage;
 		 public ContactSellerPage contactSellerPage;
 		 public UpdatePage updatePage;
@@ -58,6 +60,11 @@ public class PageObjectManager {
          public UpdatePage getUpdatePage(){
 			 
 			 return (updatePage == null) ? updatePage = new UpdatePage(driver) : updatePage;
+			 
+			 }
+          public SearchOptionsPage getSearchOptionsPage(){
+			 
+			 return (searchOptionsPage == null) ? searchOptionsPage = new SearchOptionsPage(driver) : searchOptionsPage;
 			 
 			 }
 

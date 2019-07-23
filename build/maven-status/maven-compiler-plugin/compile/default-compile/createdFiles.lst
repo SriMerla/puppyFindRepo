@@ -4,6 +4,7 @@ com\PuppyFind\Pages\HomePage.class
 enums\EnvironmentType.class
 com\PuppyFind\Pages\FindAPuppyPage.class
 com\PuppyFind\Pages\UpdatePage.class
+com\PuppyFind\Pages\SearchOptionsPage.class
 com\PuppyFind\Pages\CreateAccountPage.class
 com\PuppyFind\Pages\LoginPage.class
 managers\WebDriverManager.class
